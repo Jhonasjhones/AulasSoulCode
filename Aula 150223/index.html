@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Aula 2 de HTML e CSS</title>
+  </head>
+  <body>
+    <h2 title="Título de imagem">Imagem</h2>
+    <figure>
+      <img title="Eu a patroa e as crianças"
+        width="400px"
+        height="250px"
+        src="./Midias/eu-a-patroa-e-as-criancas.jpeg"
+        alt="Capa da serie Eu a Patroa e as Crianças"
+      />
+      <figcaption>Capa da serie Eu a Patroa e as Crianças</figcaption>
+    </figure>
+
+    <h2>Video</h2>
+    <video
+      width="800px"
+      height="400px"
+      src="./Midias/abertura-chaves.mp4"
+      controls="true"
+    ></video>
+
+    <h2>Audio</h2>
+    <audio src="./Midias/abertura-um-maluco-no-pedaco.mp3" controls></audio>
+
+    <hr />
+
+    <h2>Listas</h2>
+    <h3>Listas não ordenadas(lista de compras)</h3>
+    <ul>
+      <li>Farinha de trigo</li>
+      <li>
+        Leite
+        <img
+          height="100px"
+          src="https://www.itambe.com.br/portal/Images/Produto/itbeleitesuht1limg01integralavisoflat_medium.png"
+          alt=""
+        />
+      </li>
+      <li>Ovos</li>
+      <li>Açúcar</li>
+    </ul>
+    <br />
+    <h3>Lista ordenada(receita de bolo)</h3>
+    <ol>
+      <li>Misture todos os ingredientes em uma tigela</li>
+      <li>Aqueça o forno a 180graus</li>
+      <li>Coloque a mistura na forma e leve ao forno</li>
+      <li>Espere esfriar por 20 minutos e sirva em fatias</li>
+    </ol>
+
+    <h3>Lista aninhadas</h3>
+    <h4>Lista de comidas</h4>
+    <ul>
+      <li>
+        Café da manhã
+        <ul>
+          <li>Pão</li>
+          <li>Ovos fritos</li>
+          <li>Café</li>
+        </ul>
+      </li>
+      <li>
+        Almoço
+        <ul>
+          <li>Arroz</li>
+          <li>Feijão</li>
+          <li>Lasanha</li>
+        </ul>
+      </li>
+      <li>
+        lanche da tarde
+        <ol>
+          <li>Bolo</li>
+          <li>Suco</li>
+          <li>Pão</li>
+        </ol>
+      </li>
+      <li>
+        Jantar
+        <ol>
+          <li>Pizza</li>
+          <li>Hamburguer</li>
+          <li>Refri</li>
+        </ol>
+      </li>
+    </ul>
+
+    <h4>Como lavar as roupas</h4>
+    <ol>
+      <li>
+        Recolha suas roupas
+        <ol>
+          <li>Veja nos quartos</li>
+          <li>Veja na Sala</li>
+          <li>Veja nas escadas</li>
+          <li>Veja nos banheiros</li>
+        </ol>
+      </li>
+      <li>
+        Leve à máquina de lavar
+        <ol>
+          <li>Verifique se há objetos dentro dos bolsos das roupas</li>
+          <li>Separe as roupas coloridas das brancas</li>
+        </ol>
+      </li>
+
+      <h3>Listas de descrição</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>
+          O HTML(HyperText Markup Language ou Linguagem de marcação de hyper
+          texto) é a linguagem que estrutura os elementos visuais de uma página
+          web.
+        </dd>
+        <dt>CSS</dt>
+        <dd>
+          CSS (Cascading Style Sheet ou Folhas de Estilo em Cascata) é uma
+          linguagem de estilização utilizada para melhorar a aparênia visual de
+          elementos em um documento HTML.
+        </dd>
+      </dl>
+
+      <hr><br><br>
+
+      <h2>Tabelas</h2>
+
+      <!-- TH = TABLE HEAD -->
+      <!-- TH = UMA CELULA DE UM CABEÇÁRIO -->
+      <!-- TD = UMA CELULA COM O VALOR -->
+      <!-- <thead -> abeçalho da tabela -->
+        <!-- tbody -> Corpo da tabela -->
+        <!-- tfoot -> pé da tabela -->
+      <table border="1">
+        <colgroup>
+            <col style="width: 150px;">
+            <col style="width: 150px;"> 
+            <col style="width: 80px;">
+            <col style="width: 100px;">
+        </colgroup>
+        <tr>
+            <th>Nome</th>
+            <th>Área</th>
+            <th>Idade</th>
+            <th>Estado</th>
+        </tr>
+        <tr>
+            <td>Jonatas Vieira</td>
+            <td>Curso SoulCode</td>
+            <td>27 anos</td>
+            <td rowspan="3">Ceará</td>
+        </tr>
+        <tr>
+            <td>Almir</td>
+            <td>Full stack</td>
+            <td>23 anos</td>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>FullStak</td>
+            <td>21Anos</td>
+        </tr>
+        <tr>
+            <td colspan="4" align="center">Professores da SoulCode</td>
+        </tr>
+      </table>
+
+      <h3>Times do Brasil</h3>
+      <table border="1">
+        <thead>
+        <tr>
+            <th>Time</th>
+            <th>Score</th>
+            <th>Gols</th>
+            <th>Vitórias</th>
+        </thead>
+
+        </tr>
+        <tbody>
+        <tr>
+            <td>Fluminense</td>
+            <td>320</td>
+            <td>20</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Flamengo</td>
+            <td>320</td>
+            <td>24</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Corinthians</td>
+            <td>400</td>
+            <td>28</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Ceará</td>
+            <td>340</td>
+            <td>25</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Palmeiras</td>
+            <td>280</td>
+            <td>22</td>
+            <td>5</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4"> Times brasileiros </td>
+        </tr>
+    </tfoot>
+
+      </table>
+
+    </body>
+</html>
